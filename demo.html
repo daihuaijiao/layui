@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="layui/css/layui.css" rel="stylesheet">
+<script src="jquery-3.4.1.js"></script>
+<script src="jsrender.js"></script>
+<script src="layui/layui.js"></script>
+<style>
+.layui-nav {
+	background-color:#d9d9d9
+}
+.layui-nav .layui-nav-item a {
+	color:#000
+}
+</style>
+</head>
+<body>
+<button type="button" class="layui-btn btnn" onclick="change()">click</button>
+<div id="demo"></div>
+
+<script type="text/x-jsrender" id="tmpl">
+	<ul class="layui-nav layui-nav-tree layyi-nav-side">
+		<li class="layui-nav-item"><a href="javascript:;">{{:name}} - {{:age}}</a></li>
+	</ul>
+</script>
+<script>
+	function change() {
+		var data = {name:'jack',age:15};
+		var html = $("#tmpl").render(data);
+		$("#demo").append(html);
+	}
+</script>
+
+</body>
+</html>
