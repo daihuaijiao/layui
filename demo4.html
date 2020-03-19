@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="layui/css/layui.css" rel="stylesheet">
+<script src="jquery-3.4.1.js"></script>
+<script src="jsrender.js"></script>
+<script src="layui/layui.js"></script>
+<style>
+/*左侧导航背景颜色*/
+.layui-nav {
+	background-color:#ffffff;
+}
+.layui-side {
+	width:100px;
+}
+/*左侧导航宽度*/
+.layui-nav-tree {
+	width:100px;
+}
+.layui-body {
+	left:100px;	
+}
+/*菜单默认显示的颜色*/
+.layui-nav .layui-nav-item a {
+	color:rgba(60, 55, 55, 0.7)
+}
+/*菜单选中后的颜色*/
+.layui-nav-tree .layui-this > a {
+	color:#ffffff
+}
+/*子菜单背景颜色*/
+.layui-nav-itemed .layui-nav-child {
+	#background-color:#eeeeee
+}
+.layui-card {
+	margin:10px 10px;
+}
+
+
+.my-footer {
+    position: fixed;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    background-color: #2F4056;
+font-weight: 300;
+height: 50px;
+line-height: 50px;
+#padding: 0px 0;
+z-index:999;
+text-align: center;
+}
+
+.my-footer a{
+	padding:0 0px;
+
+} 
+
+</style>
+</head>
+<body>
+<div class="layui-tab layui-tab-card">
+
+  <div class="layui-tab-content" style="height: 100px;">
+    <div class="layui-tab-item layui-show">1</div>
+    <div class="layui-tab-item">2</div>
+    <div class="layui-tab-item">3</div>
+    <div class="layui-tab-item">4</div>
+    <div class="layui-tab-item">5</div>
+    <div class="layui-tab-item">6</div>
+  </div>
+  <ul class="layui-tab-title">
+    <li class="layui-this">网站设置</li>
+    <li>用户管理</li>
+    <li>权限分配</li>
+    <li>商品管理</li>
+    <li>订单管理</li>
+  </ul>10:26 2020/3/19
+</div>
+</div>
+
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
+
