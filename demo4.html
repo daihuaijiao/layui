@@ -60,14 +60,32 @@ text-align: center;
 </head>
 <body>
 <div class="layui-tab layui-tab-card">
-
   <div class="layui-tab-content" style="height: 100px;">
-    <div class="layui-tab-item layui-show">1</div>
+    <div class="layui-tab-item layui-show">1
+	<div class="layui-side layui-bg-gray">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item">
+          <a class="" href="demo.html">所有商品</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">解决方案</a>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:;">云市场</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">发布商品</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">发布商品</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">发布商品</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">发布商品</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">发布商品</a></li>
+      </ul>
+    </div>
+  </div>
+    </div>
     <div class="layui-tab-item">2</div>
     <div class="layui-tab-item">3</div>
     <div class="layui-tab-item">4</div>
     <div class="layui-tab-item">5</div>
-    <div class="layui-tab-item">6</div>
   </div>
   <ul class="layui-tab-title">
     <li class="layui-this">网站设置</li>
@@ -75,7 +93,7 @@ text-align: center;
     <li>权限分配</li>
     <li>商品管理</li>
     <li>订单管理</li>
-  </ul>10:26 2020/3/19
+  </ul>
 </div>
 </div>
 
